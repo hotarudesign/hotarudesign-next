@@ -6,7 +6,7 @@ const Text = [
   {
     id: 1,
     ttl: "楽しく制作を、より良い制作を",
-    desc: `どんな制作でも、どんなジャンルでも、まずは楽しんで制作することを心掛けています。<br>サービスや制作物も、「利用する方の身になり、精度の高い制作物を作る。」という思いを持って臨むようにしています。`,
+    desc: `どんな制作でも、どんなジャンルでも、まずは楽しんで制作することを心掛けています。サービスや制作物も、「利用する方の身になり、精度の高い制作物を作る。」という思いを持って臨むようにしています。`,
     img: "/images/webp/feature_01.webp",
   },
   {
@@ -28,7 +28,7 @@ export const Slide = () => {
       className={classes.slider}
       options={{
         autoplay: true,
-        interval: 1000,
+        interval: 3000,
         type: "loop",
         pauseOnHover: false,
       }}
