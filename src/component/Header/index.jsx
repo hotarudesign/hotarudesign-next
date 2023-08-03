@@ -1,14 +1,22 @@
 import Link from "next/link";
-import { Nav } from "src/component/Nav";
+import { Nav } from "src/component/Header/Nav";
+import Image from "next/image";
 import classes from "src/component/Header/Header.module.scss";
 
 export const Header = () => {
   return (
-    <header className={classes.header}>
-      <div className={classes.header__inner}>
-        <h1 className={classes.header__logo}>
+    <header className={classes.container}>
+      <div className={classes.inner}>
+        <h1>
           <Link href="" legacyBehavior>
-            <a>Hotaru Design</a>
+            <a>
+              <Image
+                src="/images/logo-black.svg"
+                width={35}
+                height={35}
+                alt="Hotaru Design"
+              ></Image>
+            </a>
           </Link>
         </h1>
         <Nav />

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import classes from "src/component/Nav/Nav.module.scss";
+import classes from "src/component/Header/Nav/Nav.module.scss";
 
 const navItem = ["About", "Works", "Contact"];
 

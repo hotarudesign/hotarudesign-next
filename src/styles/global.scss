@@ -428,3 +428,28 @@ a {
 * {
   box-sizing: border-box;
 }
+/* NotoSans */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700;900&display=swap");
+
+html {
+  font-size: 62.5%;
+}
+img {
+  max-width: 100%;
+  height: auto;
+}
+body {
+  font-family: "Noto Sans JP", sans-serif;
+  overflow-x: hidden;
+  background: #efefef;
+  color: #222;
+}
+a {
+  opacity: 1;
+  transition: opacity 0.5s;
+  &:hover,
+  &:focus {
+    opacity: 0.7;
+    transition: opacity 0.5s;
+  }
+}
