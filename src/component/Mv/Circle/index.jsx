@@ -2,6 +2,14 @@ import classes from "src/component/Mv/Circle/Circle.module.scss";
 import { gsap } from "gsap";
 import { useEffect } from "react";
 
+const animeAllay = {
+  y: 50,
+  repeat: -1,
+  yoyo: true,
+  duration: 4,
+  ease: "power1.inOut",
+};
+
 export const Circle = () => {
   useEffect(() => {
     gsap
@@ -18,13 +26,7 @@ export const Circle = () => {
       .fromTo(
         "#circle01",
         { y: 0 },
-        {
-          y: 50,
-          repeat: -1,
-          yoyo: true,
-          duration: 4,
-          ease: "power1.inOut",
-        }
+        { y: 50, repeat: -1, yoyo: true, duration: 4, ease: "power1.inOut" }
       );
     gsap
       .timeline()
