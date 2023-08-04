@@ -2,7 +2,21 @@ import classes from "src/component/Mv/Circle/Circle.module.scss";
 import { gsap } from "gsap";
 import { useEffect } from "react";
 
-const animeAllay = {
+const fadeInSet = {
+  opacity: 0,
+  y: 50,
+};
+const fadeInTo = {
+  opacity: 1,
+  y: 0,
+  duration: 2,
+  ease: "power1.inOut",
+};
+
+const from = {
+  y: 0,
+};
+const animeTo = {
   y: 50,
   repeat: -1,
   yoyo: true,
@@ -15,217 +29,53 @@ export const Circle = () => {
     gsap
       .timeline()
       //   circle01
-      .fromTo(
-        "#circle01",
-        {
-          opacity: 0,
-          y: 50,
-        },
-        { opacity: 1, y: 0, duration: 2, ease: "power1.inOut" }
-      )
-      .fromTo(
-        "#circle01",
-        { y: 0 },
-        { y: 50, repeat: -1, yoyo: true, duration: 4, ease: "power1.inOut" }
-      );
+      .fromTo("#circle01", fadeInSet, fadeInTo)
+      .fromTo("#circle01", from, animeTo);
     gsap
       .timeline()
       //   circle02
-      .fromTo(
-        "#circle02",
-        {
-          opacity: 0,
-          y: 50,
-        },
-        { opacity: 1, y: 0, duration: 2, delay: 0.5, ease: "power1.inOut" }
-      )
-      .fromTo(
-        "#circle02",
-        { y: 0 },
-        {
-          y: 50,
-          repeat: -1,
-          yoyo: true,
-          duration: 10,
-          ease: "power1.inOut",
-        }
-      );
+      .fromTo("#circle02", fadeInSet, { ...fadeInTo, delay: 0.5 })
+      .fromTo("#circle02", from, animeTo);
     gsap
       .timeline()
       //   circle03
-      .fromTo(
-        "#circle03",
-        {
-          opacity: 0,
-          y: 50,
-        },
-        { opacity: 1, y: 0, duration: 2, delay: 1, ease: "power1.inOut" }
-      )
-      .fromTo(
-        "#circle03",
-        { y: 0 },
-        {
-          y: 50,
-          repeat: -1,
-          yoyo: true,
-          duration: 2,
-          ease: "power1.inOut",
-        }
-      );
+      .fromTo("#circle03", fadeInSet, { ...fadeInTo, delay: 1 })
+      .fromTo("#circle03", from, animeTo);
     gsap
       .timeline()
       //   circle04
-      .fromTo(
-        "#circle04",
-        {
-          opacity: 0,
-          y: 50,
-        },
-        { opacity: 1, y: 0, duration: 2, delay: 1.5, ease: "power1.inOut" }
-      )
-      .fromTo(
-        "#circle04",
-        { y: 0 },
-        {
-          y: 50,
-          repeat: -1,
-          yoyo: true,
-          duration: 5,
-          ease: "power1.inOut",
-        }
-      );
+      .fromTo("#circle04", fadeInSet, { ...fadeInTo, delay: 1.5 })
+      .fromTo("#circle04", from, animeTo);
     gsap
       .timeline()
       //   circle05
-      .fromTo(
-        "#circle05",
-        {
-          opacity: 0,
-          y: 50,
-        },
-        { opacity: 1, y: 0, duration: 2, delay: 2, ease: "power1.inOut" }
-      )
-      .fromTo(
-        "#circle05",
-        { y: 0 },
-        {
-          y: 50,
-          repeat: -1,
-          yoyo: true,
-          duration: 8,
-          ease: "power1.inOut",
-        }
-      );
+      .fromTo("#circle05", fadeInSet, { ...fadeInTo, delay: 2 })
+      .fromTo("#circle05", from, animeTo);
     gsap
       .timeline()
       //   circle06
-      .fromTo(
-        "#circle06",
-        {
-          opacity: 0,
-          y: 50,
-        },
-        { opacity: 1, y: 0, duration: 2, delay: 2.5, ease: "power1.inOut" }
-      )
-      .fromTo(
-        "#circle06",
-        { y: 0 },
-        {
-          y: 50,
-          repeat: -1,
-          yoyo: true,
-          duration: 4,
-          ease: "power1.inOut",
-        }
-      );
+      .fromTo("#circle06", fadeInSet, { ...fadeInTo, delay: 2.5 })
+      .fromTo("#circle06", from, animeTo);
     gsap
       .timeline()
       //   circle07
-      .fromTo(
-        "#circle07",
-        {
-          opacity: 0,
-          y: 50,
-        },
-        { opacity: 1, y: 0, duration: 2, delay: 3, ease: "power1.inOut" }
-      )
-      .fromTo(
-        "#circle07",
-        { y: 0 },
-        {
-          y: 50,
-          repeat: -1,
-          yoyo: true,
-          duration: 6,
-          ease: "power1.inOut",
-        }
-      );
+      .fromTo("#circle07", fadeInSet, { ...fadeInTo, delay: 3 })
+      .fromTo("#circle07", from, animeTo);
     gsap
       .timeline()
       //   circle08
-      .fromTo(
-        "#circle08",
-        {
-          opacity: 0,
-          y: 50,
-        },
-        { opacity: 1, y: 0, duration: 2, delay: 3.5, ease: "power1.inOut" }
-      )
-      .fromTo(
-        "#circle08",
-        { y: 0 },
-        {
-          y: 50,
-          repeat: -1,
-          yoyo: true,
-          duration: 10,
-          ease: "power1.inOut",
-        }
-      );
+      .fromTo("#circle08", fadeInSet, { ...fadeInTo, delay: 3.5 })
+      .fromTo("#circle08", from, animeTo);
     gsap
       .timeline()
       //   circle09
-      .fromTo(
-        "#circle09",
-        {
-          opacity: 0,
-          y: 50,
-        },
-        { opacity: 1, y: 0, duration: 2, delay: 4, ease: "power1.inOut" }
-      )
-      .fromTo(
-        "#circle09",
-        { y: 0 },
-        {
-          y: 50,
-          repeat: -1,
-          yoyo: true,
-          duration: 4,
-          ease: "power1.inOut",
-        }
-      );
+      .fromTo("#circle09", fadeInSet, { ...fadeInTo, delay: 4 })
+      .fromTo("#circle09", from, animeTo);
     gsap
       .timeline()
       //   circle¥10
-      .fromTo(
-        "#circle10",
-        {
-          opacity: 0,
-          y: 50,
-        },
-        { opacity: 1, y: 0, duration: 2, delay: 4.5, ease: "power1.inOut" }
-      )
-      .fromTo(
-        "#circle10",
-        { y: 0 },
-        {
-          y: 50,
-          repeat: -1,
-          yoyo: true,
-          duration: 6,
-          ease: "power1.inOut",
-        }
-      );
+      .fromTo("#circle10", fadeInSet, { ...fadeInTo, delay: 4.5 })
+      .fromTo("#circle10", from, animeTo);
   }, []);
   return (
     <div className={classes.container}>
