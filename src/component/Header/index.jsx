@@ -11,7 +11,7 @@ export const Header = () => {
           <Link href="" legacyBehavior>
             <a>
               <Image
-                src="/images/logo-black.svg"
+                src="/images/logo-white.svg"
                 width={35}
                 height={35}
                 alt="Hotaru Design"
