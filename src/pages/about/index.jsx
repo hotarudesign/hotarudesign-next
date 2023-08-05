@@ -3,6 +3,7 @@ import { motion } from "framer-motion";
 import { Header } from "src/component/Header";
 import { Footer } from "src/component/Footer";
 import { AboutHead } from "src/component/AboutHead";
+import { AboutMain } from "src/component/AboutMain";
 
 const About = () => {
   return (
@@ -18,6 +19,7 @@ const About = () => {
       </Head>
       <Header />
       <AboutHead />
+      <AboutMain />
       <Footer />
     </motion.div>
   );
