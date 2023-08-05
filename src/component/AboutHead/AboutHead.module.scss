@@ -1,0 +1,36 @@
+.container {
+  height: 100vh;
+  position: relative;
+}
+.inner {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
+  padding: 0 2%;
+  height: 100%;
+}
+.text {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+.ttl {
+  font-weight: 900;
+  font-size: 8rem;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+  color: #fff;
+  opacity: 0.7;
+}
+.thumb {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+  img {
+    border-radius: 250px 0 0 0;
+    width: 1000px;
+    height: 100vh;
+    object-fit: cover;
+  }
+}

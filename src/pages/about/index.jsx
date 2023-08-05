@@ -1,6 +1,7 @@
 import Head from "next/head";
 import { Header } from "src/component/Header";
 import { Footer } from "src/component/Footer";
+import { AboutHead } from "src/component/AboutHead";
 
 const About = () => {
   return (
@@ -11,6 +12,7 @@ const About = () => {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Header />
+      <AboutHead />
       <Footer />
     </div>
   );
