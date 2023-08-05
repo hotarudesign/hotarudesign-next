@@ -14,7 +14,7 @@ export const Nav = () => {
         {NAV_ITEMS.map((item) => {
           return (
             <li key={item.href} className={classes.gnav__item}>
-              <Link href={item.href} legacyBehavior>
+              <Link href={item.href} legacyBehavior scroll={false}>
                 <a>{item.label}</a>
               </Link>
             </li>
