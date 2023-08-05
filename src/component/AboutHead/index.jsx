@@ -3,14 +3,16 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import classes from "src/component/AboutHead/AboutHead.module.scss";
+import { CircleText } from "src/component/AboutHead/CircleText";
 
 export const AboutHead = () => {
   return (
     <div className={classes.container}>
       <div className={classes.inner}>
+        <CircleText />
         <div className={classes.text}>
           <Splide
-            className="splide"
+            className={classes.slide}
             options={{
               type: "loop",
               drag: false,
@@ -21,7 +23,6 @@ export const AboutHead = () => {
               isNavigation: false,
               autoScroll: {
                 speed: 1,
-
                 pauseOnHover: false,
                 pauseOnFocus: false,
                 rewind: false,
