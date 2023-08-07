@@ -41,7 +41,13 @@ export const Slide = () => {
               <p className={classes.desc}>{text.desc}</p>
             </div>
             <figure className={classes.thumb}>
-              <Image src={text.img} width={400} height={400} alt=""></Image>
+              <Image
+                src={text.img}
+                width="350"
+                height="0"
+                style={{ width: "100%", height: "auto" }}
+                alt=""
+              />
             </figure>
           </SplideSlide>
         );
