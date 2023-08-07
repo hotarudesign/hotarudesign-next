@@ -13,8 +13,8 @@ import Link from "next/link";
 const Home = (props) => {
   return (
     <motion.div
-      initial={{ opacity: 1 }}
-      animate={{ opacity: 1 }}
+      initial={{ opacity: 1, x: 0 }}
+      animate={{ opacity: 1, x: 0 }}
       exit={{ opacity: 0, x: -500 }}
       transition={{ ease: "easeInOut", duration: 0.5 }}
     >

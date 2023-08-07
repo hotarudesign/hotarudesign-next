@@ -10,6 +10,7 @@ const About = () => {
     <motion.div
       initial={{ opacity: 0, x: 500 }}
       animate={{ opacity: 1, x: 0 }}
+      exit={{ opacity: 0, x: -500 }}
       transition={{ ease: "easeInOut", duration: 0.5 }}
     >
       <Head>
