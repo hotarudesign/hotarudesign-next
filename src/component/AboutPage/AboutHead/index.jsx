@@ -3,7 +3,7 @@ import { Splide, SplideSlide } from "@splidejs/react-splide";
 import "@splidejs/react-splide/css";
 import { AutoScroll } from "@splidejs/splide-extension-auto-scroll";
 import classes from "src/component/AboutHead/AboutHead.module.scss";
-import { CircleText } from "src/component/AboutHead/CircleText";
+import { CircleText } from "src/component/AboutPage/AboutHead/CircleText";
 
 export const AboutHead = () => {
   return (

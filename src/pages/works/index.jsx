@@ -3,7 +3,7 @@ import { client } from "src/libs/client";
 import { Header } from "src/component/Header";
 import { WorksPosts } from "src/component/WorksPosts";
 import { Footer } from "src/component/Footer";
-import { WorksHead } from "src/component/WorksHead";
+import { WorksHead } from "src/component/WorksPage/WorksHead";
 
 const Works = (props) => {
   return (
