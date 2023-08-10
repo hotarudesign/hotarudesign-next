@@ -2,7 +2,7 @@ import Head from "next/head";
 import { Header } from "src/component/Header";
 import { Footer } from "src/component/Footer";
 import { AboutHead } from "src/component/AboutPage/AboutHead";
-import { AboutMain } from "src/component/AboutMain";
+import { AboutMain } from "src/component/AboutPage/AboutMain";
 
 const About = () => {
   return (
