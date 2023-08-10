@@ -1,6 +1,8 @@
 .container {
   height: 100vh;
   position: relative;
+  background: url(../../../public/images/webp/about_thumb.webp) no-repeat
+    center/cover;
 }
 .inner {
   display: flex;
@@ -27,13 +29,6 @@
 }
 .thumb {
   position: absolute;
-  top: 0;
   right: 0;
   z-index: -1;
-  img {
-    border-radius: 250px 0 0 0;
-    width: 1000px;
-    height: 100vh;
-    object-fit: cover;
-  }
 }

@@ -38,14 +38,15 @@ export const AboutHead = () => {
           </Splide>
           <p className={classes.desc}></p>
         </div>
-        <figure className={classes.thumb}>
+        {/* <figure className={classes.thumb}>
           <Image
             src="/images/webp/about_thumb.webp"
-            width={1000}
-            height={1000}
+            width="800"
+            height="0"
+            style={{ width: "100%", height: "auto" }}
             alt=""
           ></Image>
-        </figure>
+        </figure> */}
       </div>
     </div>
   );
