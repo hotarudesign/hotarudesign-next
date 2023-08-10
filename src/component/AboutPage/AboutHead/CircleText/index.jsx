@@ -1,4 +1,4 @@
-import classes from "src/component//AboutHead/CircleText/CircleText.module.scss";
+import classes from "src/component/AboutHead/CircleText/CircleText.module.scss";
 
 export const CircleText = () => {
   return (
