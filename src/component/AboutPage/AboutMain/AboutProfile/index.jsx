@@ -2,7 +2,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import Image from "next/image";
 import { useEffect } from "react";
-import classes from "src/component/AboutMain/AboutProfile/AboutProfile.module.scss";
+import classes from "src/component/AboutPage/AboutMain/AboutProfile/AboutProfile.module.scss";
 
 export const AboutProfile = () => {
   useEffect(() => {

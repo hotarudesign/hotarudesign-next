@@ -1,7 +1,7 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
 import { useEffect } from "react";
-import classes from "src/component/AboutMain/AboutSkill/AboutSkill.module.scss";
+import classes from "src/component/AboutPage/AboutMain/AboutSkill/AboutSkill.module.scss";
 
 const CODING_ITEMS = [
   "HTML",

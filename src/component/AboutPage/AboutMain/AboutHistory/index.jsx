@@ -1,8 +1,7 @@
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/dist/ScrollTrigger";
-import Image from "next/image";
 import { useEffect } from "react";
-import classes from "src/component/AboutMain//AboutHistory/AboutHistory.module.scss";
+import classes from "src/component/AboutPage/AboutMain//AboutHistory/AboutHistory.module.scss";
 
 const HISTORY_ITEMS = [
   {
