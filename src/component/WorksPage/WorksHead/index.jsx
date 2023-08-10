@@ -1,4 +1,5 @@
-import classes from "src/component/WorksHead/WorksHead.module.scss";
+import TextAnimation from "src/component/WorksPage/WorksHead/TextAnimation";
+import classes from "src/component/WorksPage/WorksHead/WorksHead.module.scss";
 
 export const WorksHead = () => {
   return (
@@ -11,7 +12,9 @@ export const WorksHead = () => {
         className={classes.video}
       ></video>
       <div className={`${classes.inner} inner`}>
-        <h2 className={classes.ttl}>Works</h2>
+        <section id="textAnime">
+          <TextAnimation section="textAnime">Works</TextAnimation>
+        </section>
       </div>
     </div>
   );

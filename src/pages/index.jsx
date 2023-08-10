@@ -6,8 +6,6 @@ import { Header } from "src/component/Header";
 import { Mv } from "src/component/Mv";
 import { Works } from "src/component/Works";
 import { client } from "src/libs/client";
-import Link from "next/link";
-import { useCallback } from "react";
 
 const Home = (props) => {
   return (

@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-import classes from "src/component/WorksPosts/WorksPosts.module.scss";
+import classes from "src/component/WorksPage/WorksPosts/WorksPosts.module.scss";
 
 export const WorksPosts = (props) => {
   const contents = props.props.contents;

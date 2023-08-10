@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { client } from "src/libs/client";
 import { Header } from "src/component/Header";
-import { WorksPosts } from "src/component/WorksPosts";
+import { WorksPosts } from "src/component/WorksPage/WorksPosts";
 import { Footer } from "src/component/Footer";
 import { WorksHead } from "src/component/WorksPage/WorksHead";
 
