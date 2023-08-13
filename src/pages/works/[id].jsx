@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import { Footer } from "src/component/Footer";
 import { Header } from "src/component/Header";
 import { WorksPost } from "src/component/WorksPost";
@@ -6,7 +7,12 @@ import classes from "src/pages/works/WorksPost.module.scss";
 
 const WorksId = (props) => {
   return (
-    <div className="container">
+    <motion.div
+      className="container"
+      initial={{ opacity: 0 }} // 初期状態
+      animate={{ opacity: 1 }} // マウント時
+      exit={{ opacity: 0 }} // アンマウント時
+    >
       <Header />
       <article className={classes.container}>
         <div className={`${classes.inner} inner`}>
@@ -14,7 +20,7 @@ const WorksId = (props) => {
         </div>
       </article>
       <Footer />
-    </div>
+    </motion.div>
   );
 };
 
