@@ -1,14 +1,19 @@
-import Image from "next/image";
+import { Footer } from "src/component/Footer";
+import { Header } from "src/component/Header";
+import { WorksPost } from "src/component/WorksPost";
 import { client } from "src/libs/client";
 import classes from "src/pages/works/WorksPost.module.scss";
 
 const WorksId = (props) => {
   return (
-    <div>
-      <h1 className={classes.ttl}>{props.data.title}</h1>
-      <figure>
-        <Image src={props.data.img.url} width={350} height={250} alt="" />
-      </figure>
+    <div className="container">
+      <Header />
+      <article className={classes.container}>
+        <div className={`${classes.inner} inner`}>
+          <WorksPost props={props} />
+        </div>
+      </article>
+      <Footer />
     </div>
   );
 };

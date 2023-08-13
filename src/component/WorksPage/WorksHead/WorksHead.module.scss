@@ -1,5 +1,5 @@
 .container {
-  height: 100vh;
+  height: 30vh;
   position: relative;
   &::before {
     content: "";
@@ -26,12 +26,5 @@
 .inner {
   display: flex;
   align-items: center;
-  max-width: inherit;
   height: 100%;
-}
-.ttl {
-  font-weight: 900;
-  font-size: 120px;
-  letter-spacing: 0.02em;
-  color: #fff;
 }
