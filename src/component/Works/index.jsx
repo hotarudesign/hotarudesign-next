@@ -13,7 +13,11 @@ export const Works = (props) => {
           {contents.map((content) => {
             return (
               <li key={content.id} className={classes.item}>
-                <Link href={`/works/${content.id}`} legacyBehavior>
+                <Link
+                  href={`/works/${content.id}`}
+                  legacyBehavior
+                  scroll={false}
+                >
                   <a className={classes.item__wrap}>
                     <div className={classes.item__txt}>
                       <h3 className={classes["item__txt-ttl"]}>
@@ -41,7 +45,7 @@ export const Works = (props) => {
           })}
         </ul>
         <div className={classes["btn-wrap"]}>
-          <Link href="/works" legacyBehavior>
+          <Link href="/works" legacyBehavior scroll={false}>
             <a className={classes.btn}>
               制作実績をもっと見る<span className={classes["btn-arrow"]}></span>
             </a>

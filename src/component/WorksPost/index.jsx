@@ -8,8 +8,14 @@ export const WorksPost = (props) => {
     <div className={classes.container}>
       <div className={classes.flex}>
         <div className={classes.body}>
-          <Link href={data.link}>
-            <h2 className={classes.ttl}>{data.title}</h2>
+          <Link href={data.link} legacyBehavior>
+            <a
+              className={classes.ttl}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              {data.title}
+            </a>
           </Link>
           <p className={classes.category}>{data.category}</p>
           <p className={classes.desc}>{data.desc}</p>

@@ -12,7 +12,6 @@ const MyApp = ({ Component, pageProps, router }) => {
     };
     tempFix();
   };
-
   Router.events.on("routeChangeComplete", routeChange);
   Router.events.on("routeChangeStart", routeChange);
   return (

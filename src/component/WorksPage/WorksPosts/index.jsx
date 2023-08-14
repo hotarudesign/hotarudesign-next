@@ -11,7 +11,11 @@ export const WorksPosts = (props) => {
           {contents.map((content) => {
             return (
               <li key={content.id} className={classes.item}>
-                <Link href={`/works/${content.id}`} legacyBehavior>
+                <Link
+                  href={`/works/${content.id}`}
+                  legacyBehavior
+                  scroll={false}
+                >
                   <a className={classes.item__wrap}>
                     <div className={classes.item__txt}>
                       <h3 className={classes["item__txt-ttl"]}>

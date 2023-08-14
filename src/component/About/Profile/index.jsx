@@ -14,7 +14,7 @@ export const Profile = () => {
             常にクライアント様の立場に立ってお仕事することを大切にしております。
           </p>
           <div className={classes["btn-wrap"]}>
-            <Link href="/about" legacyBehavior>
+            <Link href="/about" legacyBehavior scroll={false}>
               <a className={classes.btn}>
                 Aboutページへ<span className={classes["btn-arrow"]}></span>
               </a>
