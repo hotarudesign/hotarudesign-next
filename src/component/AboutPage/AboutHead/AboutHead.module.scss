@@ -3,6 +3,7 @@
   position: relative;
   background: url(../../../../public/images/webp/about_thumb.webp) no-repeat
     center/cover;
+  overflow-x: hidden;
 }
 .inner {
   display: flex;
