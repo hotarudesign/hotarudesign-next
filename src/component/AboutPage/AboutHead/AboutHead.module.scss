@@ -27,6 +27,9 @@
   letter-spacing: 0.02em;
   color: #fff;
   opacity: 0.7;
+  @media (max-width: 520px) {
+    font-size: 4rem;
+  }
 }
 .thumb {
   position: absolute;

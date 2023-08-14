@@ -6,12 +6,20 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: row-reverse;
-  @media (max-width: 520px) {
+  gap: 0 40px;
+  @media (max-width: 768px) {
+    align-items: flex-start;
     flex-direction: column-reverse;
   }
 }
 .body {
   max-width: 600px;
+  width: 100%;
+  @media (max-width: 768px) {
+    margin: 40px 0 0;
+    max-width: 100%;
+    width: 100%;
+  }
 }
 .name {
   font-weight: 900;
@@ -26,6 +34,9 @@
   line-height: 1.8;
   letter-spacing: 0.04em;
   color: #fff;
+}
+.thumb {
+  width: 100%;
 }
 .btn {
   display: inline-block;

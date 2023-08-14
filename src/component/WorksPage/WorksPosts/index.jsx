@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { WorksHead } from "src/component/WorksPage/WorksHead";
 import classes from "src/component/WorksPage/WorksPosts/WorksPosts.module.scss";
 
 export const WorksPosts = (props) => {

@@ -25,7 +25,8 @@ export const Profile = () => {
           <Image
             src="/images/webp/about_thumb.webp"
             width={550}
-            height={367}
+            height="0"
+            style={{ width: "100%", height: "auto" }}
             alt=""
           />
         </figure>

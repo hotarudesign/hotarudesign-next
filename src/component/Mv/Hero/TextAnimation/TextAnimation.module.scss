@@ -5,4 +5,7 @@
   color: #fff;
   position: relative;
   z-index: 1;
+  @media (max-width: 520px) {
+    font-size: 4rem;
+  }
 }

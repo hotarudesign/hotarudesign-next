@@ -45,6 +45,7 @@ export const AboutProfile = () => {
               width={200}
               height={200}
               alt=""
+              style={{ width: "100%", height: "auto" }}
             />
           </figure>
         </div>

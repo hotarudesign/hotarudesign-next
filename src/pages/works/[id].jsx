@@ -1,6 +1,7 @@
 import { motion } from "framer-motion";
 import { Footer } from "src/component/Footer";
 import { Header } from "src/component/Header";
+import { WorksHead } from "src/component/WorksPage/WorksHead";
 import { WorksPost } from "src/component/WorksPost";
 import { client } from "src/libs/client";
 import classes from "src/pages/works/WorksPost.module.scss";
@@ -14,6 +15,7 @@ const WorksId = (props) => {
       exit={{ opacity: 0 }} // アンマウント時
     >
       <Header />
+      <WorksHead />
       <article className={classes.container}>
         <div className={`${classes.inner} inner`}>
           <WorksPost props={props} />

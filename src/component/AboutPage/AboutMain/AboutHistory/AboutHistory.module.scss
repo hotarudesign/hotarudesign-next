@@ -6,6 +6,9 @@
   margin: 0 auto;
   padding: 0 2%;
   position: relative;
+  @media (max-width: 991px) {
+    padding: 0 6%;
+  }
 }
 .ttl {
   font-weight: 900;
@@ -14,6 +17,9 @@
   font-style: italic;
   -ms-writing-mode: tb-rl;
   writing-mode: vertical-rl;
+  @media (max-width: 520px) {
+    font-size: 2rem;
+  }
 
   &__wrap {
     display: flex;
@@ -46,16 +52,25 @@
   align-items: center;
   gap: 0 40px;
   padding: 40px 0 0;
+  @media (max-width: 520px) {
+    gap: 0 6%;
+  }
 }
 .body {
   font-weight: 400;
   font-size: 1.8rem;
   line-height: 1.8;
   letter-spacing: 0.04em;
+  @media (max-width: 520px) {
+    font-size: 1.6rem;
+  }
 }
 .num {
   font-size: 2.4rem;
   position: relative;
+  @media (max-width: 520px) {
+    font-size: 2rem;
+  }
   &::before {
     content: "";
     display: inline-block;
@@ -67,5 +82,9 @@
     top: 55%;
     left: 52%;
     transform: translate(-50%, -50%);
+    @media (max-width: 520px) {
+      width: 32px;
+      height: 32px;
+    }
   }
 }
