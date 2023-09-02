@@ -1,0 +1,38 @@
+.container {
+  padding: 20px;
+  position: absolute;
+  top: 51%;
+  left: 0;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.block {
+  width: 250px;
+  height: 250px;
+  margin: auto;
+  @media (max-width: 578px) {
+    width: 100px;
+    height: 100px;
+  }
+}
+.circleText {
+  overflow: visible;
+  animation: rotation 18s linear infinite;
+  &__circle {
+    fill: none;
+  }
+  &__text {
+    fill: #222;
+    font-weight: 500;
+    font-size: 12px;
+    letter-spacing: 0.03em;
+  }
+}
+@keyframes rotation {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

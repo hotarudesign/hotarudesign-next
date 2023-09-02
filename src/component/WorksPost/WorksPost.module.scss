@@ -1,0 +1,34 @@
+.flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: row-reverse;
+  gap: 0 40px;
+}
+.body {
+  width: 50%;
+}
+.ttl {
+  display: inline-block;
+  font-weight: 700;
+  font-size: 3.2rem;
+  letter-spacing: 0.02em;
+  color: #1a0dab;
+  border-bottom: 2px solid #1a0dab;
+}
+.category {
+  margin: 20px 0 0;
+  font-weight: 500;
+  font-size: 1.6rem;
+  letter-spacing: 0.02em;
+}
+.desc {
+  margin: 20px 0 0;
+  font-weight: 500;
+  font-size: 2rem;
+  line-height: 1.6;
+  letter-spacing: 0.02em;
+}
+.thumb {
+  width: 50%;
+}

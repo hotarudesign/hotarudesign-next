@@ -1,0 +1,11 @@
+.main {
+  font-weight: 900;
+  font-size: 6rem;
+  letter-spacing: 0.02em;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  @media (max-width: 520px) {
+    font-size: 4rem;
+  }
+}

@@ -5,15 +5,39 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0 4%;
+  padding: 0 40px;
+  @media (max-width: 520px) {
+    justify-content: center;
+    position: relative;
+    padding: 0;
+  }
 }
 .body {
   max-width: 600px;
+  width: 60%;
+  @media (max-width: 520px) {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 2%;
+    width: 100%;
+    height: 100%;
+    background: rgba($color: #000000, $alpha: 0.3);
+    color: #fff;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
 }
 .ttl {
   font-weight: 700;
   font-size: 2.6rem;
   letter-spacing: 0.04em;
+  @media (max-width: 520px) {
+    font-size: 2rem;
+    text-align: center;
+  }
 }
 .desc {
   margin: 20px 0 0;
@@ -21,4 +45,12 @@
   font-size: 1.8rem;
   line-height: 2;
   letter-spacing: 0.04em;
+  @media (max-width: 520px) {
+    font-size: 1.6rem;
+  }
+}
+.thumb {
+  @media (max-width: 520px) {
+    width: 100%;
+  }
 }

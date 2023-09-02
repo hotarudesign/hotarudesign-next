@@ -444,6 +444,11 @@ body {
   background: #efefef;
   color: #222;
 }
+.inner {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 2%;
+}
 a {
   opacity: 1;
   transition: opacity 0.5s;
