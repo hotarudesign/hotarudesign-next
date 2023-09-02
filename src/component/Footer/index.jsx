@@ -10,7 +10,7 @@ export const Footer = () => {
         <Link href="/" legacyBehavior>
           <a>
             <Image
-              src="/images/logo-white.svg"
+              src="/images/logo-black.svg"
               width={35}
               height={35}
               alt="Hotaru Design"

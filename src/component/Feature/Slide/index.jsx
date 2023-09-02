@@ -5,7 +5,7 @@ import classes from "src/component/Feature/Slide/Slide.module.scss";
 const Text = [
   {
     id: 1,
-    ttl: `楽しく制作を、より良い制作を`,
+    ttl: "楽しく制作を、より良い制作を",
     desc: `どんな制作でも、どんなジャンルでも、まずは楽しんで制作することを心掛けています。サービスや制作物も、「利用する方の身になり、精度の高い制作物を作る。」という思いを持って臨むようにしています。`,
     img: "/images/webp/feature_01.webp",
   },
@@ -18,7 +18,7 @@ const Text = [
   {
     id: 3,
     ttl: "自己研磨の姿勢を大切に",
-    desc: `Webデザインのお仕事を続けられているのは「好きだから」という理由につきますが、その他にも理由があります。制作スキルはもちろんですが、コミュニケーションスキルやビジネススキルといった側面でもご依頼いただくお仕事を通じて常に成長させていただいていると感じております。「Webのスキルを活かして世の中の人の役にたち、新たな制作や経験をすることで自身を成長させる。」この連続です。`,
+    desc: "Webデザインのお仕事を続けられているのは「好きだから」という理由につきますが、その他にも理由があります。制作スキルはもちろんですが、コミュニケーションスキルやビジネススキルといった側面でもご依頼いただくお仕事を通じて常に成長させていただいていると感じております。「Webのスキルを活かして世の中の人の役にたち、新たな制作や経験をすることで自身を成長させる。」",
     img: "/images/webp/feature_03.webp",
   },
 ];
@@ -41,13 +41,7 @@ export const Slide = () => {
               <p className={classes.desc}>{text.desc}</p>
             </div>
             <figure className={classes.thumb}>
-              <Image
-                src={text.img}
-                width="350"
-                height="0"
-                style={{ width: "100%", height: "auto" }}
-                alt=""
-              />
+              <Image src={text.img} width={400} height={400} alt=""></Image>
             </figure>
           </SplideSlide>
         );

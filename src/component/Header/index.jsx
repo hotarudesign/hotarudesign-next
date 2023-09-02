@@ -8,10 +8,10 @@ export const Header = () => {
     <header className={classes.container}>
       <div className={classes.inner}>
         <h1>
-          <Link href="/" legacyBehavior>
+          <Link href="" legacyBehavior>
             <a>
               <Image
-                src="/images/logo-white.svg"
+                src="/images/logo-black.svg"
                 width={35}
                 height={35}
                 alt="Hotaru Design"
